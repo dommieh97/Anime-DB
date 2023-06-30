@@ -1,19 +1,19 @@
-// Verify Log In Status
-window.addEventListener("DOMContentLoaded", function () {
-  if (isLoggedIn()) {
-    var myPageLink = document.getElementById("myPageLink");
-    myPageLink.href = "register.html";
+// // Verify Log In Status
+// window.addEventListener("DOMContentLoaded", function () {
+//   if (isLoggedIn()) {
+//     var myPageLink = document.getElementById("myPageLink");
+//     myPageLink.href = "register.html";
 
-    document.getElementById("loginContainer").style.display = "none";
-    document.getElementById("logoutButton").style.display = "block";
-  } else {
-    var myPageLink = document.getElementById("myPageLink");
-    myPageLink.href = "myPage.html";
+//     document.getElementById("loginContainer").style.display = "none";
+//     document.getElementById("logoutButton").style.display = "block";
+//   } else {
+//     var myPageLink = document.getElementById("myPageLink");
+//     myPageLink.href = "myPage.html";
 
-    document.getElementById("loginContainer").style.display = "block";
-    document.getElementById("logoutButton").style.display = "none";
-  }
-});
+//     document.getElementById("loginContainer").style.display = "block";
+//     document.getElementById("logoutButton").style.display = "none";
+//   }
+// });
 
 // Add Code Here
 function createGenreButtons(genreData) {
@@ -523,68 +523,68 @@ items.forEach((elem) => {
 });
 
 // login functionality
-function isLoggedIn() {
-  const token = localStorage.getItem("token");
-  return !!token;
-}
+// function isLoggedIn() {
+//   const token = localStorage.getItem("token");
+//   return !!token;
+// }
 
-function setAuthToken(token) {
-  localStorage.setItem("token", token);
-}
+// function setAuthToken(token) {
+//   localStorage.setItem("token", token);
+// }
 
-function removeAuthToken() {
-  localStorage.removeItem("token");
-}
+// function removeAuthToken() {
+//   localStorage.removeItem("token");
+// }
 
-function openLoginPopup() {
-  document.getElementById("loginPopup").style.display = "block";
-}
+// function openLoginPopup() {
+//   document.getElementById("loginPopup").style.display = "block";
+// }
 
-function closeLoginPopup() {
-  document.getElementById("loginPopup").style.display = "none";
-}
+// function closeLoginPopup() {
+//   document.getElementById("loginPopup").style.display = "none";
+// }
 
-function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+// function login() {
+//   const username = document.getElementById("username").value;
+//   const password = document.getElementById("password").value;
 
-  fetch("http://localhost:3000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ username, password }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.token) {
-        setAuthToken(data.token);
+//   fetch("http://localhost:3000/login", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify({ username, password }),
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       if (data.token) {
+//         setAuthToken(data.token);
 
-        document.getElementById("loginContainer").style.display = "none";
-        document.getElementById("logoutButton").style.display = "block";
-      } else {
-        console.error("Authentication failed");
-      }
-    })
-    .catch((error) => {
-      console.error("Error occurred during login:", error);
-    }); 
-     closeLoginPopup();
+//         document.getElementById("loginContainer").style.display = "none";
+//         document.getElementById("logoutButton").style.display = "block";
+//       } else {
+//         console.error("Authentication failed");
+//       }
+//     })
+//     .catch((error) => {
+//       console.error("Error occurred during login:", error);
+//     }); 
+//      closeLoginPopup();
 
-}
-login();
+// }
+// login();
 
-function logout() {
-  removeAuthToken();
+// function logout() {
+//   removeAuthToken();
 
-  document.getElementById("loginContainer").style.display = "block";
-  document.getElementById("logoutButton").style.display = "none";
-}
-logout();
+//   document.getElementById("loginContainer").style.display = "block";
+//   document.getElementById("logoutButton").style.display = "none";
+// }
+// logout();
 
-document.querySelector("#show-login").addEventListener('click', function(){
-  document.querySelector('.popup').classList.add('active')
-});
-document.querySelector(".popup .close-btn").addEventListener('click', function(){
-  document.querySelector('.popup').classList.remove('active')
-});
+// document.querySelector("#show-login").addEventListener('click', function(){
+//   document.querySelector('.popup').classList.add('active')
+// });
+// document.querySelector(".popup .close-btn").addEventListener('click', function(){
+//   document.querySelector('.popup').classList.remove('active')
+// });

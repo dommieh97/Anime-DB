@@ -1,19 +1,19 @@
-// Verify Log In Status
-window.addEventListener("DOMContentLoaded", function () {
-  if (isLoggedIn()) {
-    var myPageLink = document.getElementById("myPageLink");
-    myPageLink.href = "register.html";
+// // Verify Log In Status
+// window.addEventListener("DOMContentLoaded", function () {
+//   if (isLoggedIn()) {
+//     var myPageLink = document.getElementById("myPageLink");
+//     myPageLink.href = "register.html";
 
-    document.getElementById("loginContainer").style.display = "none";
-    document.getElementById("logoutButton").style.display = "block";
-  } else {
-    var myPageLink = document.getElementById("myPageLink");
-    myPageLink.href = "myPage.html";
+//     document.getElementById("loginContainer").style.display = "none";
+//     document.getElementById("logoutButton").style.display = "block";
+//   } else {
+//     var myPageLink = document.getElementById("myPageLink");
+//     myPageLink.href = "myPage.html";
 
-    document.getElementById("loginContainer").style.display = "block";
-    document.getElementById("logoutButton").style.display = "none";
-  }
-});
+//     document.getElementById("loginContainer").style.display = "block";
+//     document.getElementById("logoutButton").style.display = "none";
+//   }
+// });
 
 // Add Code Here
 let genreButton;
