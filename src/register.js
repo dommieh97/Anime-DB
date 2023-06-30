@@ -64,18 +64,18 @@
 // }
 
 // // html elements only
-// const items = document.querySelectorAll(".item");
-// const active = document.querySelector(".active");
+const items = document.querySelectorAll(".item");
+const active = document.querySelector(".active");
 
-// (function reset() {
-//   active.style.left = `${items[4].offsetLeft}px`;
-// })();
+(function reset() {
+  active.style.left = `${items[4].offsetLeft}px`;
+})();
 
-// items.forEach((elem) => {
-//   elem.addEventListener("click", (e) => {
-//     active.style.left = `${elem.offsetLeft}px`;
-//   });
-// });
+items.forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    active.style.left = `${elem.offsetLeft}px`;
+  });
+});
 
 // // login functionality
 // function isLoggedIn() {
