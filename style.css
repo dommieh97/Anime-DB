@@ -1,0 +1,498 @@
+head
+{
+  text-shadow: red 0 -2px;
+  
+
+}
+
+body
+{
+    margin:0; 
+    
+    font-family : Georgia, 'Times New Roman' ;
+    
+
+    
+}
+ 
+
+html
+{
+    background:#bb949d;
+    
+  
+}
+h1
+{
+    background:#bb949d9d;
+    color: rgb(255, 255, 255);
+    border: 4px;
+    border-color: #333;
+    border-left-width: 50px;
+    border-top-width: 100px;
+    border-right-width: 100;
+    border-bottom-width: 50px;
+
+}
+
+#h1
+{   
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+    
+   
+}
+
+.animeBtn 
+{  
+font-family: Arial, Helvetica, sans-serif;  
+text-transform: uppercase;
+border:3px rgb(3, 3, 3);
+
+}  
+.btn:hover .btn-slide-show-text1 
+{  
+  margin-left: 65px;
+}  
+.zoom-out 
+{  display: inline-block;  
+  color: rgb(255, 255, 255);  
+  margin: 20px;  
+  width: 180px;  
+  height: 50px;  
+  border-radius: 10px;  
+  position: relative;  
+  overflow: hidden;  
+  text-decoration: none;  
+  text-transform: uppercase;  
+  font-family: Helvetica;  
+  text-align: center;  
+  transition: all 0.5s ease 0s;  
+  border: none;
+}  
+
+.zoom-out:hover 
+{  
+transform: scale(1.1);
+}  
+.zoom-out--red 
+{  
+background: rgb(240, 45, 68);
+}  
+
+  .popularAnimeNav
+  {
+    padding:15px 50px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .popularMangaNav
+  {
+    padding:15px 50px;
+    width: 150px;
+    height: 150px;
+  }
+
+  #description 
+  { 
+    font-size: medium;
+   margin-inline-start: 250px;
+   margin-inline-end: 250px;
+    text-align: center;
+  }
+
+  .engName
+  {
+    font-size: medium;
+    margin-inline-start: 250px;
+   margin-inline-end: 250px;
+    text-align: center;
+  }
+
+
+  
+  .btn 
+  {  font-family: Arial, Helvetica, sans-serif;  
+    text-transform: uppercase;
+  }  
+  .btn:hover .btn-slide-show-text1 
+  {  
+    margin-left: 65px;
+  }  
+  .btn-rect-to-round 
+  { height: 22px;  
+    width: 50;  
+    font-size: 10px;  
+    font-weight: 700;  
+    background: rgb(204, 204, 204);  
+    cursor: pointer;  
+    transition: all 0.5s ease-in 0s;
+    border: 3px;
+  }  
+  .btn-rect-to-round:hover 
+  {  border-radius: 60px;  
+    color: rgb(255, 255, 255) !important;
+  } 
+     .btn-rect-to-round--red 
+     {  border: 3px solid rgb(3, 3, 3); 
+       color: #000000 !important;
+      }  
+  .btn-rect-to-round--red:hover 
+  {  
+    border-color: rgb(3, 3, 3);  
+    background: rgb(239, 35, 60);
+  }  
+
+  input  
+  {
+    background-color: rgb(204, 204, 204);
+    opacity: 100%;
+    text-align: center;
+    border: 3px solid rgb(3, 3, 3);
+    position: relative; top: 0.5px;
+
+  }
+#release-year
+{
+  font-size: medium;
+}
+#rating-display
+{
+  font-size: medium;
+}
+#genres
+{
+  padding: 15px;
+  font-size: medium;
+  position: relative;bottom:20px;
+}
+#mycurrents  
+  {
+    font-weight: bold;
+  }
+#mangaSubmissions
+{
+  position: relative; left:25px; top: 5px;
+}
+#animeSubmission
+{
+  position: relative; left:25px; top: 5px;
+}
+
+#currentNav
+{
+  position: relative;  top: 15px;
+}
+
+button.genreBtn{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  appearance: auto;
+   
+}
+**
+.container {
+  width: 100%;
+  min-height: 15vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.navbar {
+  height: 60px;
+  min-width: 700px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  
+}
+
+.nav--list {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  display: flex;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #000;
+}
+
+.active {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  background: rgb(239, 35, 60);
+  border-radius: 50px;
+  transition: left 300ms cubic-bezier(1, -0.5, 0, 1.5);
+  border-top: 3px solid rgb(204, 204, 204);
+  border-bottom: 3px solid rgb(204, 204, 204);
+  border-left: 3px solid rgb(204, 204, 204);
+  border-right: 3px solid rgb(204, 204, 204);
+}
+
+.item {
+  height: 100%;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  z-index: 20;
+}
+
+
+#genreTitle 
+{
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgb(187 149 157);
+ 
+  transition: all 0.5s ease-in 0s;
+  border: 3px;
+}
+
+
+#genreSpace button 
+{
+  height: 50px;  
+  width: 50; 
+}
+
+.image-wrap {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#header {
+  background-image: url("https://media.discordapp.net/attachments/1121928146850168963/1122992039701790741/20220326_194447.jpg?width=947&height=670");
+  background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+  padding: 50px;
+  padding-left: 60px;
+  padding-bottom:40px;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  height: 250px;
+ 
+}
+
+
+
+/* new login form  */
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+.createNew
+{
+position:absolute;
+left:50%;
+right:50%;
+transform:translate(-50%,-50%);
+
+}
+
+#createNew button {
+  padding:10px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  color:222;
+  background:#f5f5f5;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  border-radius:20px;
+  
+}
+.popup{
+  position:absolute;
+  top:-150%;
+  left:50%;
+  opacity: 100;
+  transform:translate(-50%,-50%) scale(1.25);
+  width: 450px;
+  height: 250px;
+  padding:5px 10px;
+  background:#e1caca;
+  box-shadow: 20px 20px 50px 50px rgba(0,0,0,0.15);
+  border-radius:30px;
+  transition:top 0ms ease-in-out 200ms, 
+  
+
+  
+  
+  
+} 
+.popup.active{
+  top:50%;
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+ 
+}
+.popup .close-btn 
+{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:15px;
+  background:#888;
+  color:#eee;
+  text-align:center;
+  line-height:15px;
+  border-radius:15px;
+  cursor:pointer;
+}
+.popup .form h2{
+  text-align: center;
+  color:#222;
+  margin:10px 0px 20px;
+  font-size:25px;
+}
+
+.popup .for .for-element {
+  margin:15px 0px
+}
+.popup .for .for-element label{
+  font-size:14px;
+  color:#222;
+}
+
+.popup .for .form-element input[type="text"],
+.popup .for .form-element input[type='password']{
+  margin-top:5px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;
+}
+
+.popup .for .form-element input[type="checkbox"]{
+  margin-right:5px;
+}
+.popup .form .form-element button{
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:15px;
+  background:#222;
+  color:#f5f5f5;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.popup .for .form-element a {
+  display:block;
+  text-align:right;
+  font-size:15px;
+  color:#1a79ca;
+  text-decoration: none;
+  font-weight:600;
+}
+
+
+
+
+
+
+
+ #signup-login {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+
+/* .popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+}
+#logOn{
+  position:relative;
+  top:40px;
+  left:600px;
+} */
+
+.floaty-boy {
+  position: absolute;
+  background-color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  z-index: 9999;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.floaty-boy.show {
+  visibility: visible;
+}
+
+#generateButtons
+{
+  position: center;
+  padding-top: 10px;
+  font-size: medium;
+}

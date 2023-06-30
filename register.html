@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    h1{text-align: center;}
+    h1{font-size: 80px;}
+    p {text-align: center;}
+    div {text-align: center;}
+    span {text-align: center;}
+     h2{text-align: right;} 
+     html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+     #signup-login {
+      position:absolute;
+      top:50%;
+      left:50%;
+        
+    }
+    #loginPopup
+    {
+      position:absolute;
+      top:20%;
+      left:50%;
+    }
+    #signup-login #upper,
+    #signup-login #lower {
+      margin-bottom: 10px;
+    }
+
+    #signup-login input[type="text"],
+    #signup-login input[type="password"],
+    #signup-login button {
+      display: block;
+      margin: 5px;
+    }
+    
+    #createUser
+    {
+      position: absolute;
+      top: 90%;
+      left: 23%;
+    } 
+
+ </style>
+<head>
+  <title>Anime DataBase Skeleton</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer type="text/javascript" src="./src/register.js"></script>
+    
+</head>
+
+<body>
+  <div id="header">
+    
+    <h1 style =" height: 900;">
+      
+      Anime Preference Finder
+    </h1> 
+    <div id="loginContainer">
+      <button onclick="openLoginPopup()">Login</button>
+      <button onclick="logout()" id="logoutButton" style="display: none;" class="logout-button">Logout</button>
+    </div>
+    <div id="loginPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closeLoginPopup()">&times;</span>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Sign In</button>
+      </div>
+    </div>
+
+    <div class="container">
+    <nav class="navbar">
+      <ul class="nav--list">
+        <li class="active"></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="anime.html">Anime</a></li>
+        <li class="item"><a href="manga.html">Manga</a></li>
+        <li class="item"><a href="random.html">Random</a></li>
+        <li class="item"><a id="myPageLink" href="register.html">My Page</a></li>
+      </ul>
+      
+    </nav>
+  </div>
+  
+    </div>
+    
+  <!-- Your HTML content here -->
+ 
+  
+  
+    <div id = 'signup-login' class='login time'>
+      <div id="upper">
+    <input type="text" id="usernameInput" placeholder="Username">
+    <input type="password" id="passwordInput" placeholder="Password">
+      </div>
+      <div id="lower">
+    <button id='createUser'class="btn btn-rect-to-round btn-rect-to-round--red" onclick="createUser()">Create User</button>
+      </div> 
+    </div>
+</body>
+</html>

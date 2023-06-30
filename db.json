@@ -1,0 +1,18 @@
+{
+  "users": {
+    "username": "dommieh97",
+    "password": "Asdf1234",
+    "Manga": {},
+    "Anime": {}
+  },
+  "login": {
+    "username": "",
+    "password": ""
+  },
+  "mangaUser": {
+
+  },
+  "animeUser": {
+    
+  }
+}
