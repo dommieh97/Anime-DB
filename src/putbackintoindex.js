@@ -204,3 +204,12 @@
 // }
 
 // compareProperties();
+
+// <!-- <div id="generateButtons">
+//    <button id="generateManga" class="btn btn-rect-to-round btn-rect-to-round--red"> Generate Manga </button>
+//    <button id="generateAnime" class="btn btn-rect-to-round btn-rect-to-round--red"> Generate Anime </button>
+// </div> -->
+
+// <!-- <div class="createNew">
+// <button id="show-login">Login</button>
+// </div> -->
